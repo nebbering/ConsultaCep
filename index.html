@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="utf-8" />
-    <title>Busca CEP</title>
-    <script type="text/javascript" src="JS\jquery.min.js"></script>
-    <script type="text/javascript" src="JS\main.js"></script>
-    <link rel="stylesheet" type="text/css" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css"
-</head>
-<body>
-   
-    <!--NAVBAR--> 
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand">Consulta CEP</a>
-          <div class="d-flex">
-            <input class="form-control me-2" type="00000-000" placeholder="00000-000" id="cep">
-            <button class="btn btn-outline-success" onclick="consultaCep()">PROCURAR</button>
-          </div>
-        </div>
-      </nav>
-   
-      <!--TABELA-->
-      <div class="conteiner cep" style="margin-top: 20px; margin-left: 5px;">
-        <div class="row">
-        <h3 id="titulo_cep">DADOS DO CEP</h3>
-        </div>
-      </div>
-      <div class="row" style="margin-top: 10px; margin-left: 5px;">
-            <table class="table">
-                  <tbody>
-                      <tr>
-                          <td>Rua</td>
-                          <td id="logradouro"></td>
-                      </tr>
-                      <tr>
-                          <td>Bairro</td>
-                          <td id="bairro"></td>
-                      </tr>
-                      <tr>
-                          <td>Cidade</td>
-                          <td id="localidade"></td>
-                      </tr>
-                      <tr>
-                          <td>Estado</td>
-                          <td id="uf"></td>
-                      </tr>
-                  </tbody>
-            </table>
-      </div>
 
-     
+<head>
+  <meta charset="utf-8" />
+  <title>Busca CEP</title>
+  <script type="text/javascript" src="JS\jquery.min.js"></script>
+  <script type="text/javascript" src="JS\main.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css" </head>
+
+<body>
+
+  <!--NAVBAR-->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">Consulta CEP // @nebbering97</a>
+      <div class="d-flex">
+        <input class="form-control me-2" type="00000-000" placeholder="00000-000" id="cep">
+        <button class="btn btn-outline-success" onclick="consultaCep()">PROCURAR</button>
+      </div>
+    </div>
+  </nav>
+
+  <!--TABELA-->
+  <div class="conteiner cep" style="margin-top: 20px; margin-left: 5px;">
+    <div class="row">
+      <h3 id="titulo_cep">DADOS DO CEP</h3>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 1em; padding: 1em;">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>Rua</td>
+          <td id="logradouro"></td>
+        </tr>
+        <tr>
+          <td>Bairro</td>
+          <td id="bairro"></td>
+        </tr>
+        <tr>
+          <td>Cidade</td>
+          <td id="localidade"></td>
+        </tr>
+        <tr>
+          <td>Estado</td>
+          <td id="uf"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
 
 </body>
+
 </html>
