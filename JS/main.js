@@ -18,8 +18,3 @@ function consultaCep() {
     })
 
 }
-
-$(function () {
-    $(".cep").hide();
-});
-
